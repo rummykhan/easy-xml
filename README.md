@@ -45,5 +45,64 @@ will output
 ```
 
 
+## `RummyKhan\EasyXml\XmlNode` API
+
+### `addChildNode`
+
+To add a child node to XmlNode.
+e.g.
+
+```php
+$rootNode = new XmlNode('employees');
+$employeeNode = new XmlNode('employee');
+
+$rootNode->addChildNode($employeeNode);
+```
+
+### `setDeclaration`
+To set the [Xml declaration](http://xmlwriter.net/xml_guide/xml_declaration.shtml)
+
+```php
+$rootNode = new XmlNode('employees');
+$rootNode->setDeclaration('<?xml version="1.0" encoding="UTF-8" standalone="no" ?>');
+```
+
+### `setValue`
+To set the value of the node. Node can either have other node as children or it has a primitive value.
+
+```php
+$rootNode = new XmlNode('name');
+$rootNode->setValue('rummykhan');
+```
+
+### `addAttribute`
+To add the attribute for the xml node.
+
+```php
+$rootNode = new XmlNode('person');
+$rootNode->addAttribute('age', 30);
+```
+
+### `addAttributes`
+To add multiple attributes for the xml node.
+e.g.
+
+```php
+$rootNode = new XmlNode('person');
+$rootNode->addAttributes([
+    'name' => 'rummykhan',
+    'age' => 30
+]);
+```
+
+
+### `toString`
+To convert xml single node or xml node hierarchy to xml string.
+
+```php
+$rootNode = new XmlNode('employees');
+dd($rootNode->toString());
+```
+
 ### Contact
 [rehan_manzoor@outlook.com](mailto://rehan_manzoor@outlook.com)
