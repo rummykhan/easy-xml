@@ -1,5 +1,13 @@
 # EasyXML for Laravel
 
+## Installation
+
+Install using composer
+
+```php
+composer require rummykhan/easy-xml
+```
+
 ## Add Service Provider
 Add `ServiceProvider` to `config/app.php` providers array.
 

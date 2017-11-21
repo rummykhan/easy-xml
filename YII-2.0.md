@@ -1,5 +1,13 @@
 # EasyXML for YII 2.0
 
+## Installation
+
+Install using composer
+
+```php
+composer require rummykhan/easy-xml
+```
+
 ## Add as component 
 Add `easy-xml` to `config/web.php` components array.
 

@@ -4,18 +4,10 @@ This package helps you in converting your data to XML easily.
 This package is independent of any php framework.
 But I took care of two popular frameworks specifically
 
-1. Laravel
-2. YII 2.0
+1. [For use in Laravel](https://github.com/rummykhan/easy-xml/blob/master/Laravel.md)
+2. [For use in YII 2.0](https://github.com/rummykhan/easy-xml/blob/master/YII-2.0.md)
 
-## Installation
-
-Install using composer
-
-```php
-composer require rummykhan/easy-xml
-```
-
-## How To Use
+## To use in any framework
 
 Wit the constructor initialization you can use it any framework you may like.
 
@@ -52,12 +44,6 @@ will output
 </person>
 ```
 
-
-## For use in Laravel
-[Easy XML Laravel Docs](https://github.com/rummykhan/easy-xml/blob/master/Laravel.md)
-
-## For use in YII 2.0
-[Easy XML YII Docs](https://github.com/rummykhan/easy-xml/blob/master/YII-2.0.md)
 
 ### Contact
 [rehan_manzoor@outlook.com](mailto://rehan_manzoor@outlook.com)
