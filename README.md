@@ -13,7 +13,7 @@ But I took care of two popular frameworks specifically
 
 Install using composer
 
-```php
+```bash
 composer require rummykhan/easy-xml
 ```
 

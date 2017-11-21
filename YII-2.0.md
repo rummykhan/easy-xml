@@ -4,7 +4,7 @@
 
 Install using composer
 
-```php
+```bash
 composer require rummykhan/easy-xml
 ```
 
