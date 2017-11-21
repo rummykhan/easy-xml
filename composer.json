@@ -1,0 +1,26 @@
+{
+  "name": "rummykhan/easy-xml",
+  "description": "Convert your data to xml string easily.",
+  "keywords": [
+    "Convert data to XML",
+    "XML",
+    "yii 2.0",
+    "laravel"
+  ],
+  "authors": [
+    {
+      "name": "Rehan Manzoor",
+      "email": "rehan_manzoor@outlook.com"
+    }
+  ],
+  "license": "MIT",
+  "type": "package",
+  "require": {
+    "php": ">=5.5.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "RummyKhan\EasyXml\\": "src/"
+    }
+  }
+}
