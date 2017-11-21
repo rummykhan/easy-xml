@@ -9,6 +9,14 @@ But I took care of two popular frameworks specifically
 
 ## To use in any framework
 
+### Installation
+
+Install using composer
+
+```php
+composer require rummykhan/easy-xml
+```
+
 Wit the constructor initialization you can use it any framework you may like.
 
 ```php
