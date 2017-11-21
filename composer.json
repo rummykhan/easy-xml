@@ -5,7 +5,7 @@
     "Convert data to XML",
     "XML",
     "yii 2.0",
-    "laravel"
+    "laravel 5"
   ],
   "authors": [
     {
@@ -22,5 +22,14 @@
     "psr-4": {
       "RummyKhan\\EasyXml\\": "src/"
     }
-  }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "RummyKhan\\EasyXml\\EasyXmlServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
