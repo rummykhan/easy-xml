@@ -24,7 +24,7 @@ To use with Facade add
 
 ## How TO Build XML Nodes and hierarchies 
 
-`Yii::$app->get('easy-xml')->create('person')` will give you instance of `RummyKhan\EasyXml\XmlNode` class.
+`app('easy-xml')->create('person')` OR `EasyXmlFacade::create('person')` will give you instance of `RummyKhan\EasyXml\XmlNode` class.
 [See api for `RummyKhan\EasyXml\XmlNode` class ](https://github.com/rummykhan/easy-xml#rummykhaneasyxmlxmlnode-api)
 
 ### 1. Using app container
