@@ -59,14 +59,6 @@ $employeeNode = new XmlNode('employee');
 $rootNode->addChildNode($employeeNode);
 ```
 
-### `setDeclaration`
-To set the [Xml declaration](http://xmlwriter.net/xml_guide/xml_declaration.shtml)
-
-```php
-$rootNode = new XmlNode('employees');
-$rootNode->setDeclaration('<?xml version="1.0" encoding="UTF-8" standalone="no" ?>');
-```
-
 ### `setValue`
 To set the value of the node. Node can either have other node as children or it has a primitive value.
 
@@ -93,6 +85,14 @@ $rootNode->addAttributes([
     'name' => 'rummykhan',
     'age' => 30
 ]);
+```
+
+### `setDeclaration`
+To set the [Xml declaration](http://xmlwriter.net/xml_guide/xml_declaration.shtml)
+
+```php
+$rootNode = new XmlNode('employees');
+$rootNode->setDeclaration('<?xml version="1.0" encoding="UTF-8" standalone="no" ?>');
 ```
 
 
