@@ -27,7 +27,6 @@ To use with Facade add
 ### 1. Using app container
 
 ```php
-
 // Create a node
 $rootNode = app('easy-xml')->create('person');
 
@@ -45,7 +44,7 @@ $jobNode->addAttribute('fourth', 'https://helpbit.com');
 $rootNode->addChildNode($educationNode)
     ->addChildNode($jobNode)
     ->setDeclaration(XmlDeclaration::V1);
-    
+
 dd((string)$rootNode); // since it implements __toString()
 //or
 dd($rootNode->toString());
@@ -53,14 +52,12 @@ dd($rootNode->toString());
 
 will output
 
-will output
-
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<person name="rummykhan">
-   <education matric="Pole star model" DAE="COE" BA="UOS" />
-   <education matric="Pole star model" DAE="COE" BA="UOS" />
-   <education matric="Pole star model" DAE="COE" BA="UOS" />
+<person>
+   <education MOE="SXC" DAE="COE" BA="UOS" />
+   <education MOE="SXC" DAE="COE" BA="UOS" />
+   <education MOE="SXC" DAE="COE" BA="UOS" />
    <job first="https://best-bf.com" second="https://infamous.ae" third="https://awok.com" fourth="https://helpbit.com" />
 </person>
 ```
@@ -69,9 +66,6 @@ will output
 
 ```php
 $rootNode = EasyXmlFacade::create('person');
-
-$educationNode = EasyXmlFacade::create('education');
-$educationNode->addAttributes(['MOE' => 'SXC', 'DAE' => 'COE', 'BA' => 'UOS']);
 
 $jobNode = EasyXmlFacade::create('job');
 
@@ -82,6 +76,8 @@ $jobNode->addAttribute('fourth', 'https://helpbit.com');
 
 $rootNode->addChildNode($jobNode)
     ->setDeclaration(XmlDeclaration::V1);
+
+dd((string)$rootNode);
 ```
 
 will output
@@ -89,7 +85,6 @@ will output
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <person>
-   <education MOE="SXC" DAE="COE" BA="UOS" />
    <job first="https://best-bf.com" second="https://infamous.ae" third="https://awok.com" fourth="https://helpbit.com" />
 </person>
 ```

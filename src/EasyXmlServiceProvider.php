@@ -10,8 +10,9 @@ namespace RummyKhan\EasyXml;
 
 use Illuminate\Support\ServiceProvider;
 
-class EasyXmlServiceProvider
+class EasyXmlServiceProvider extends ServiceProvider
 {
+    protected $defer = true;
     /**
      * Register the service provider.
      *

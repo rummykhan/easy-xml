@@ -8,8 +8,8 @@
 
 namespace RummyKhan\EasyXml;
 
-use RummyKhan\EasyXml\Contracts\XmlNodeContract;
 use LibXMLError;
+use RummyKhan\EasyXml\Contracts\XmlNodeContract;
 
 class XmlNode implements XmlNodeContract
 {
@@ -253,9 +253,6 @@ class XmlNode implements XmlNodeContract
      */
     protected function validate()
     {
-        if (empty($this->children)) {
-            return true;
-        }
         libxml_use_internal_errors(true);
         $loaded = simplexml_load_string($this->cache);
 
@@ -264,8 +261,6 @@ class XmlNode implements XmlNodeContract
              * @var LibXmlError $error
              */
             foreach (libxml_get_errors() as $error) {
-
-                dd($this->cache, $error, $this);
                 throw new \Exception($error->message);
             }
         }
